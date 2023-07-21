@@ -1,46 +1,40 @@
-.listado-tarjetas {
-  margin-top: 10vh;
-}
-
 .tabla {
-  width: 80%;
-  margin: 0 auto;
+  width: 800px;
+  margin: auto;
   background-color: #ccc;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 6px;
-  overflow: hidden;
+  white-space: nowrap; /* Evitar salto de línea */
+  overflow: hidden; /* Recortar el texto que no quepa */
+  text-overflow: ellipsis; /* Agregar puntos suspensivos (...) si el texto se recorta */
 }
 
 .tabla th {
-  background-color: #e6493d;
   color: #ffffff;
+  height: 25px;
   padding: 10px;
+  font-size: 16px;
+}
+
+.tabla thead tr {
+  background-color: #e6493d;
+}
+
+.tabla tbody tr:hover {
+  background-color: #b3b3b3;
 }
 
 .tabla td {
+  font-size: 14px;
   padding: 10px;
-}
-
-.tabla input[type="text"],
-.tabla input[type="number"] {
-  border: none;
-  border-radius: 6px;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.tabla input#dni {
-  width: 70%;
-  float: left;
+  color: #1a1a1a;
 }
 
 .tabla button {
-  display: block;
+  display: inline-block;
   border: none;
   border-radius: 6px;
-  width: 100%;
-  margin-top: 10px;
+  margin: 0 2px;
   padding: 10px;
   background-color: #e6493d;
   color: #ffffff;
@@ -49,4 +43,5 @@
 
 .tabla button:hover {
   background-color: #ec0b0b;
+  transform: scale(1.02);
 }

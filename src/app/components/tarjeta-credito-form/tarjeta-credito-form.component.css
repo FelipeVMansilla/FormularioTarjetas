@@ -1,8 +1,8 @@
-  .formcontainer {
+  /* .formcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   .formulario {
     font-family: 'Montserrat', sans-serif;
@@ -45,8 +45,7 @@
   }
   
   .formgroup2 {
-    display: flex;
-    justify-content: space-between;
+    display: flex;  
     align-items: center;
     flex: 1;
     margin-right: 10px;
@@ -71,6 +70,7 @@
     padding: 10px;
     background-color: #e6493d;
     color: #ffffff;
+    font-size: 80%;
     cursor: pointer;
   }
   
