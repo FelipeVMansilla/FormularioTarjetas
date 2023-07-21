@@ -5,5 +5,5 @@
   }
   
   .tarjeta-credito-form, .lista-tarjetas {
-    flex: 1 1 40%;
+    flex: 1;
   }
