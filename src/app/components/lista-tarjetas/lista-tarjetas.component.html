@@ -1,0 +1,29 @@
+<div class="listado-tarjetas">
+  <table class="tabla">
+    <thead>
+      <tr>
+        <th style=width:100px;>DNI</th>
+        <th style=width:350px;>Nombre y Apellido</th>
+        <th style=width:200px;>Número de Tarjeta</th>
+        <th style="width:80px;">Fecha de Expiración</th>
+        <th style="width:150px;"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tarjeta of listTarjetas">
+        <td>{{ tarjeta.dni }}</td>
+        <td>{{ tarjeta.titular }}</td>
+        <td>{{ tarjeta.numeroTarjeta }}</td>
+        <td>{{ tarjeta.fechaExpiracion }}</td>
+        <td>
+          <button class="editar-button" (click)="editarTarjeta(tarjeta)">
+            <i class="fas fa-pen"></i>
+          </button>
+          <button class="eliminar-button" (click)="eliminarTarjeta(tarjeta.id)">
+            <i class="fas fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

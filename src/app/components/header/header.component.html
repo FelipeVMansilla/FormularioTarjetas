@@ -1,0 +1,37 @@
+<header>
+    <div id="header">
+      <div class="linkbutton">
+        <button (click)="openTwitter()">
+          <img src="assets/images/TwitterIcon.png" alt="Twitter">
+        </button>
+        <button (click)="openLinkedIn()">
+          <img src="assets/images/LinkedinIcon.png" alt="LinkedIn">
+        </button>
+      </div>
+    </div>
+
+    <div class="flex-container">
+
+        <div class="left-column">
+            <button class="logo-button" (click)="navigateToHome()">
+            <img src="../../../assets/images/planexware-white.svg" alt="planexwarel.svg">
+            </button>
+        </div>
+
+
+      <div class="right-column">
+        <nav id="navbar">
+          <div>
+            <ul class="navbarclass">
+            <li><a href="https://www.planexware.com/soluciones-para-potenciar-su-negocio/">SOLUCIONES</a></li>
+            <li><a [routerLink]="['carga-de-tarjetas']">CARGA DE TARJETAS</a></li>
+            <li><a [routerLink]="['/nosotros']">NOSOTROS</a></li>
+            <li><a href="https://www.planexware.com/contacto/">CONTACTO</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+
+  </header>  
